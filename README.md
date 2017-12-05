@@ -5,12 +5,12 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![Code Climate](https://img.shields.io/codeclimate/github/bokub/chalk-animation.svg)](https://codeclimate.com/github/bokub/chalk-animation)
 
-> Colorful animations in terminal output
+> 终端输出彩色动画
 
 
-## Available animations
+## 可用的动画及效果
 
-|   Name    |                   Preview                  |
+|   名字    |                   效果                     |
 |:---------:|:------------------------------------------:|
 |  rainbow  | ![rainbow](http://i.imgur.com/napdxdn.gif) |
 |   pulse   | ![rainbow](http://i.imgur.com/xdaETwr.gif) |
@@ -19,14 +19,14 @@
 |    neon   | ![rainbow](http://i.imgur.com/YdAAroI.gif) |
 
 
-## Install
+## 模块安装
 
 ```bash
 $ npm i chalk-animation
 ```
 
 
-## Usage
+## 语法
 
 ```javascript
 const chalkAnimation = require('chalk-animation');
@@ -34,74 +34,74 @@ const chalkAnimation = require('chalk-animation');
 chalkAnimation.rainbow('Lorem ipsum dolor sit amet');
 ```
 
-#### Start and stop
+#### 开始和停止动画
 
-You can stop and resume an animation with `stop()` and `start()`.
+1.可以使用stop()函数停止动画，start()函数开始（恢复）动画。
 
-When created, the instance of chalkAnimation **starts automatically**.
+（创建时，chalkAnimation的实例会自动启动）
 
 ```javascript
-const rainbow = chalkAnimation.rainbow('Lorem ipsum'); // Animation starts
+const rainbow = chalkAnimation.rainbow('Lorem ipsum'); // 实例化一个动画，开始动画
 
 setTimeout(() => {
-    rainbow.stop(); // Animation stops
+    rainbow.stop(); // 停止动画
 }, 1000);
 
 setTimeout(() => {
-    rainbow.start(); // Animation resumes
+    rainbow.start(); // 恢复动画
 }, 2000);
 
 ```
 
-#### Automatic stop
+#### 自动停止
 
-Anything printed to the console will stop the previous animation automatically
+1.打印到控制台上的内容会自动停止之前的动画
 
 ```javascript
 chalkAnimation.rainbow('Lorem ipsum');
 setTimeout(() => {
-    // Stop the 'Lorem ipsum' animation, then write on a new line.
-    console.log('dolor sit amet');
+    // 停止"Lorem ipsum"动画，然后新写一句话
+    console.log('dolor sit amet');
 }, 1000);
 ```
 
-#### Changing speed
+#### 改变速度
 
-Change the animation speed using a second parameter. Should be greater than 0, default is 1.
+1.使用该函数的第二个参数来改变动画速度。默认值是1，且大于0
 
 ```javascript
-chalkAnimation.rainbow('Lorem ipsum', 2); // Two times faster than default
+chalkAnimation.rainbow('Lorem ipsum', 2); // 比默认快两倍
 ```
 
-#### Changing text
+#### 改变动画文字
 
-Change the animated text seamlessly with `replace()`
+1.使用replace()函数来无缝更改动画文字
 
 ```javascript
 let str = 'Loading...';
 const rainbow = chalkAnimation.rainbow(str);
 
-// Add a new dot every second
+//每秒添加一个新的字符
 setInterval(() => {
 	rainbow.replace(str += '.');
 }, 1000);
 ```
 
-#### Manual rendering
+#### 手动渲染
 
-Manually render frames with `render()`, or get the content of the next frame with `frame()`
+1.使用render()函数进行手动渲染，使用frame()函数来获取下一帧
 
 ```javascript
-const rainbow = chalkAnimation.rainbow('Lorem ipsum').stop(); // Don't start the animation
+const rainbow = chalkAnimation.rainbow('Lorem ipsum').stop(); // 设置停止动画
 
-rainbow.render(); // Display the first frame
+rainbow.render(); // 显示第一帧
 
-const frame = rainbow.frame(); // Get the second frame
+const frame = rainbow.frame(); // 获得第二帧
 console.log(frame);
 ```
 
 
-## CLI mode
+## 命令行接口模式
 
 ```bash
 # Install package globally
@@ -111,27 +111,27 @@ $ npm install --global chalk-animation
 ```
 $ chalk-animation --help
 
-Usage
-  $ chalk-animation <name> [text...]
+语法
+  $ chalk-animation <name> [text...]
 
-Available animations
-  rainbow
-  pulse
-  glitch
-  radar
-  neon
+可用的动画：
+  rainbow(彩虹)
+  pulse(心跳)
+  glitch(冲波干扰)
+  radar(雷达)
+  neon(霓虹灯)
 
-Example
-  $ chalk-animation rainbow Hello world!
+举例
+  $ chalk-animation rainbow Hello world!
 ```
 
 
-## Related
+## 相关的网址
 
 - [gradient-string](https://github.com/bokub/gradient-string) - Output gradients to terminal
 - [chalk](https://github.com/chalk/chalk) - Output colored text to terminal
 
 
-## License
+## 许可证
 
 MIT © [Boris K](https://github.com/bokub)
