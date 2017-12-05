@@ -1,1 +1,5 @@
-*.a
+node_modules
+package-lock.json
+
+# Ignores VSCode folder
+.vscode
