@@ -10,7 +10,7 @@
 
 ## 可用的动画及效果
 
-|   Name    |                   Preview                  |
+|   名字    |                   效果                     |
 |:---------:|:------------------------------------------:|
 |  rainbow  | ![rainbow](http://i.imgur.com/napdxdn.gif) |
 |   pulse   | ![rainbow](http://i.imgur.com/xdaETwr.gif) |
