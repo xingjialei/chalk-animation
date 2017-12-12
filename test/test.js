@@ -1,5 +1,5 @@
 import test from 'ava';
-import a from '.';
+import a from '../index.js';
 
 const effects = Object.keys(a);
 
