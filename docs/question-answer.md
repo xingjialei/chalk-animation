@@ -45,13 +45,28 @@
 </li>
 <li>项目有哪些代码模块？各个代码模块之间有什么关联性？<ul>
 <li>
+     <form border="1">
 	<tr>
 		<td>代码模块</td>
 		<td>暴露模块</td>
 		<td>作用</td>
 	</tr>
 	<tr>
+		<td>var</td>
+		<td></td>
+		<td>全局变量定义</td>
 	</tr>
+	     <tr>
+		<td>effects</td>
+		<td>是</td>
+		<td>动画效果</td>
+	</tr>
+	<tr>
+		<td>animateString</td>
+		<td>是</td>
+		<td>定义动画对象动作</td>
+	</tr>
+     </form>
 </li>
 </ul>
 </li>
