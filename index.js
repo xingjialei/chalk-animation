@@ -76,9 +76,10 @@ const effects = {
 		}
 		const chunkSize = Math.max(3, Math.round(str.length * 0.02));
 		const chunks = [];
-
+//chunks：代表存放字符串变换后的字符串数组
 		for (let i = 0, length = str.length; i < length; i++) {
 			const skip = Math.round(Math.max(0, (Math.random() - 0.8) * chunkSize));
+//skip：效果变换的长度
 			chunks.push(str.substring(i, i + skip).replace(/[^\r\n]/g, ' '));
 			i += skip;
 			if (str[i]) {
@@ -106,11 +107,11 @@ const effects = {
 		const step = Math.floor(255 / depth); 
 //step:颜色变幻的程度
 		const globalPos = frame % (str.length + depth);
-//globalPos:字符串变换的次数
+//globalPos:字符串明亮的位置
 		const chars = [];
 		for (let i = 0, length = str.length; i < length; i++) {
 			const pos = -(i - globalPos);
-//pos:字符串
+//pos:字符串内部开始循环
 			if (pos > 0 && pos <= depth - 1) {
 				const shade = (depth - pos) * step;
 				chars.push(chalk.rgb(shade, shade, shade)(str[i]));
