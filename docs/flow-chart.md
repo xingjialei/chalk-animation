@@ -7,4 +7,3 @@
 ![Image text](https://github.com/xingjialei/chalk-animation/blob/master/images/IMG20171212161721.jpg)
 ## 三、travis-ci集成：
 ![Image text](https://github.com/xingjialei/chalk-animation/blob/master/images/QQ%E5%9B%BE%E7%89%8720171212170114.png)
-## 四、读代码过程中的问题：
