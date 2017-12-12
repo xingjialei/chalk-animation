@@ -45,7 +45,7 @@
 </li>
 <li>项目有哪些代码模块？各个代码模块之间有什么关联性？<ul>
 <li>
-     <table border="1">
+     <table>
 	<tr>
 		<td>代码模块</td>
 		<td>暴露模块</td>
