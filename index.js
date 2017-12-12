@@ -103,13 +103,14 @@ const effects = {
   //radar雷达效果
 	radar(str, frame) {
 		const depth = Math.floor(Math.min(str.length, str.length * 0.2));
-		const step = Math.floor(255 / depth);
-
+		const step = Math.floor(255 / depth); 
+//step:颜色变幻的程度
 		const globalPos = frame % (str.length + depth);
-
+//globalPos:字符串变换的次数
 		const chars = [];
 		for (let i = 0, length = str.length; i < length; i++) {
 			const pos = -(i - globalPos);
+//pos:字符串
 			if (pos > 0 && pos <= depth - 1) {
 				const shade = (depth - pos) * step;
 				chars.push(chalk.rgb(shade, shade, shade)(str[i]));
@@ -117,7 +118,7 @@ const effects = {
 				chars.push(' ');
 			}
 		}
-
+    
 		return chars.join('');
 	},
 
