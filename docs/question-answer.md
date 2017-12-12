@@ -121,8 +121,7 @@
 </li>
 <li>阅读源代码的整个过程中，你的内心状态如何？如果有心理上的障碍，你是如何克服的？<ul>
 <li>有心理障碍，静下心来将每个效果逐个研究，对其进行拆分研究
-Edit By <a href="http://mahua.jser.me">MaHua</a></li>
+</li>
 </ul>
 </li>
 </ul>
-</body></html>
