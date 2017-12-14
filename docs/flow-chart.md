@@ -1,9 +1,0 @@
-## 一、程序流程图：
-#### 1.animateString函数
-![Image text](https://github.com/xingjialei/chalk-animation/blob/master/images/QQ%E5%9B%BE%E7%89%8720171212184451.png)
-#### 2.stopLastAnimation函数
-![Image text](https://github.com/xingjialei/chalk-animation/blob/master/images/QQ%E5%9B%BE%E7%89%8720171212184440.png)
-## 二、ava自动化测试：
-![Image text](https://github.com/xingjialei/chalk-animation/blob/master/images/IMG20171212161721.jpg)
-## 三、travis-ci集成：
-![Image text](https://github.com/xingjialei/chalk-animation/blob/master/images/QQ%E5%9B%BE%E7%89%8720171212170114.png)
