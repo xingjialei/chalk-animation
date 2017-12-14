@@ -31,8 +31,7 @@ const effects = {
 	rainbow(str, frame) {                  //hsv是一种颜色空间
 		const hue = 5 * frame;               //hue代表色调,0-360度,控制动画颜色跨度(乘5)
 		const leftColor = {h: hue % 360, s: 1, v: 1};
-		const rightColor = {h: (hue + 1) % 360, s: 1, v: 1};
-    log(frame);
+		const rightColor = {h: (hue + 1) % 360, s: 1, v: 1}; 
 		return gradient(leftColor, rightColor)(str, longHsv);
 	},
 
