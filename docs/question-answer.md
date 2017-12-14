@@ -39,11 +39,35 @@
 </ul>
 </li>
 <li>项目的依赖项有哪些，各个依赖项都是做什么，有什么功能？<ul>
-<li>？？？？？？？？</li>
+<li>chalk模块：命令行彩色输出</li>
+<li>gradient-string模块：字符串渐变</li>
 </ul>
 </li>
 <li>项目有哪些代码模块？各个代码模块之间有什么关联性？<ul>
-<li>？？？？？？？？</li>
+<li>
+     <table>
+	<tr>
+		<td>代码模块</td>
+		<td>暴露模块</td>
+		<td>作用</td>
+	</tr>
+	<tr>
+		<td>var</td>
+		<td></td>
+		<td>全局变量定义</td>
+	</tr>
+	     <tr>
+		<td>effects</td>
+		<td>是</td>
+		<td>动画效果</td>
+	</tr>
+	<tr>
+		<td>animateString</td>
+		<td>是</td>
+		<td>定义动画对象动作</td>
+	</tr>
+     </table>
+</li>
 </ul>
 </li>
 <li>代码模块中有哪些函数？各个函数都是做什么的？<ul>
@@ -55,16 +79,12 @@
 <li>String,Number,Object</li>
 </ul>
 </li>
-<li>项目中的算法有哪些种类？功能作用是什么？<ul>
-<li>？？？？？？？？</li>
 </ul>
 </li>
 <li>项目中的设计模式有哪些种类？功能作用是什么？<ul>
 <li>工厂模式，用来实例化动画对象</li>
 </ul>
 </li>
-<li>项目中使用了哪些高级的 JavaScript 语法？<ul>
-<li>？？？？？？？？</li>
 </ul>
 </li>
 <li>代码中哪一个或几个函数的代码比较难于理解？你搞明白了吗？你认为难点是什么？<ul>
